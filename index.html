@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" type="" href="img/R.ico" />
+  </head>
+  <body>
+    <header class="menu">
+      <nav>
+        <ul>
+          <li><a href="#Home">IMC</a></li>
+          <li><a href="#Resultados">Resultados</a></li>
+          <li><a href="#Sobre">Sobre essa Página</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <a name="Home"></a>
+    <div class="cont">
+      <h1 id="titulo">IMC</h1>
+      <p>
+        Insira o seu Nome:
+        <input type="text" id="nome" name="nom" size="15" />
+      </p>
+      <br />
+
+      <p>
+        Insira o seu peso:
+        <input type="text" id="peso" name="pes" size="3" />
+      </p>
+      <br />
+
+      <p>
+        Insira a sua altura:
+        <input type="text" id="altura" name="alt" size="3" />
+      </p>
+      <br />
+
+      <div id="bot">
+        <a href="#Resultados"
+          ><button id="calc" onclick="Imc()" type="button">Calcular</button></a
+        >
+        <a href="#Resultados"
+          ><button id="import" onclick="arqJson ()" type="button">
+            Importar
+          </button></a
+        >
+      </div>
+    </div>
+
+    <a name="Resultados"></a>
+    <div class="cont2">
+      <table>
+        <caption>
+          Resultados
+        </caption>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Altura</th>
+            <th>Peso</th>
+            <th>Índice</th>
+            <th>Classificação</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <a href="#Home"><button id="volt" type="button">Voltar</button></a>
+    </div>
+
+    <a name="Sobre"></a>
+    <div class="cont3">
+      <p>
+        Esta página foi criada com o objetivo de servir como atividade
+        avaliativa da disciplina de Linguagens de Programação.
+      </p>
+      <p>Foram usadas as seguintes linguagens:</p>
+      <img src="img/habilidades.png" alt="html css js" />
+      <p>Além da funcionalidade padrão de realizar o cálculo do IMC por meio dos dados informados pela caixa de input, <br> essa página também pode extrair esses dados por meio de uma importação de um arquivo JSON.</p>
+    </div>
+  </body>
+</html>

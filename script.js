@@ -42,6 +42,7 @@ function manipulaJson(array) {
     document.getElementById("altura").value = array.altura;
     Imc();
   });
+  alert("Dados do arquivo JSON importados com sucesso!");
 }
 
 function arqJson() {

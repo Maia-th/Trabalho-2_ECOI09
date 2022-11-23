@@ -31,13 +31,29 @@ function Imc() {
     classL.innerText = classific;
     newLinha.appendChild(classL);
     tbody.appendChild(newLinha);
+    clear();
   } else alert("Valores invalidos!");
 }
 
-function manipulaJson (){
-  
+function manipulaJson(array) {
+  array.forEach((array) => {
+    document.getElementById("nome").value = array.nome;
+    document.getElementById("peso").value = array.peso;
+    document.getElementById("altura").value = array.altura;
+    Imc();
+  });
 }
 
-function arqJson (){
+function arqJson() {
+  fetch("./imc-data.json")
+    .then((res) => {
+      return res.json();
+    })
+    .then((data) => manipulaJson(data));
+}
 
+function clear() {
+  document.getElementById("nome").value = "";
+  document.getElementById("peso").value = "";
+  document.getElementById("altura").value = "";
 }

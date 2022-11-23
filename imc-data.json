@@ -1,0 +1,67 @@
+[
+  {
+    "nome": "Andy Park",
+    "peso": 75,
+    "altura": 1.8
+  },
+  {
+    "nome": "Jenn Johnson",
+    "peso": 72,
+    "altura": 1.72
+  },
+  {
+    "nome": "Lindell Cooley",
+    "peso": 77,
+    "altura": 1.87
+  },
+  {
+    "nome": "Karen Carpenter",
+    "peso": 59,
+    "altura": 1.68
+  },
+  {
+    "nome": "Richard Carpenter",
+    "peso": 70,
+    "altura": 1.78
+  },
+  {
+    "nome": "Graham Russell",
+    "peso": 80,
+    "altura": 1.75
+  },
+  {
+    "nome": "Russell Hitchcock",
+    "peso": 72,
+    "altura": 1.81
+  },
+  {
+    "nome": "David Gahan",
+    "peso": 65,
+    "altura": 1.81
+  },
+  {
+    "nome": "Marcos Witt",
+    "peso": 82,
+    "altura": 1.91
+  },
+  {
+    "nome": "Josh Baldwin",
+    "peso": 86,
+    "altura": 1.79
+  },
+  {
+    "nome": "Austin Johnson",
+    "peso": 78,
+    "altura": 1.95
+  },
+  {
+    "nome": "Bernard Sumner",
+    "peso": 85,
+    "altura": 1.97
+  },
+  {
+    "nome": "David Ruis",
+    "peso": 95,
+    "altura": 1.97
+  }
+]

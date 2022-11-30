@@ -1,8 +1,8 @@
 function Imc() {
-  nome = document.getElementById("nome").value;
-  peso = document.getElementById("peso").value;
-  altura = document.getElementById("altura").value;
-  resp = parseFloat(peso) / Math.pow(altura, 2);
+  let nome = document.getElementById("nome").value;
+  let peso = document.getElementById("peso").value;
+  let altura = document.getElementById("altura").value;
+  let resp = parseFloat(peso) / Math.pow(altura, 2);
   resp = Math.round(resp * 10) / 10;
 
   if (resp < 18.5) classific = "Abaixo do peso";
@@ -42,7 +42,6 @@ function manipulaJson(array) {
     document.getElementById("altura").value = array.altura;
     Imc();
   });
-  alert("Dados do arquivo JSON importados com sucesso!");
 }
 
 function arqJson() {

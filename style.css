@@ -2,6 +2,7 @@
   margin: 0;
   border: 0;
 }
+
 body {
   background-color: black;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -14,6 +15,9 @@ body {
   background-size: cover;
 }
 
+h1 {
+  margin-bottom: 5%;
+}
 .menu {
   width: 100%;
   height: 30;
@@ -57,7 +61,8 @@ body {
 }
 
 .cont2,
-.cont3 {
+.cont3,
+.cont3-f {
   display: flex;
   margin-top: 50px;
   flex-direction: column;
@@ -67,12 +72,15 @@ body {
   font-size: 2rem;
 }
 
-.cont3 {
+.cont3-f {
   height: 100vh;
+  margin-top: 10px;
+}
+
+.cont3 {
+  height: 80%;
   font-size: 1.5rem;
-  align-items: center;
   text-align: center;
-  margin-bottom: 35px;
   margin-left: 50px;
   margin-right: 50px;
   color: darkred;
@@ -93,10 +101,10 @@ img {
 #calc,
 #volt,
 #import {
-  background: red;
+  background: black;
   color: white;
   border-style: outset;
-  border-color: red;
+  border-color: black;
   border-radius: 20px;
   cursor: pointer;
   height: 50px;
@@ -106,18 +114,19 @@ img {
 }
 
 #import {
-  background-color: darkblue;
+  background-color: white;
+  color: darkred;
   margin-left: 10px;
 }
 
 #volt {
-  background: darkorange;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 input {
   text-align: center;
+  font-size: 1.3rem;
 }
 
 #titulo {
@@ -156,7 +165,6 @@ td {
   }
   .cont3 {
     font-size: 1.3rem;
-    text-align: center;
   }
 }
 
@@ -167,23 +175,47 @@ td {
   }
   .cont3 {
     font-size: 1.2rem;
-    text-align: center;
   }
   img {
     width: 250px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 424px) {
+@media (min-width: 375px) and (max-width: 424px) {
   .cont,
   .cont2 {
     font-size: 1.2rem;
   }
   .cont3 {
     font-size: 1.1rem;
-    text-align: center;
   }
   img {
     width: 150px;
+  }
+  input {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .cont,
+  .cont2 {
+    font-size: 1rem;
+  }
+  .cont3 {
+    font-size: 1rem;
+  }
+  img {
+    width: 150px;
+  }
+  #calc,
+  #volt,
+  #import {
+    height: 35px;
+    width: 135px;
+    font: bold 15px arial, sans-serif;
+  }
+  input {
+    font-size: 0.8rem;
   }
 }

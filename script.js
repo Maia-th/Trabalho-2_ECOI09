@@ -32,7 +32,7 @@ function Imc() {
     newLinha.appendChild(classL);
     tbody.appendChild(newLinha);
     clear();
-  } else alert("Valores invalidos!");
+  } else alert("Valores inválidos!");
 }
 
 function manipulaJson(array) {
